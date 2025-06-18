@@ -1,0 +1,112 @@
+const { Pool } = require('pg');
+const express = require('express');
+const jwt = require('jsonwebtoken');
+const bcrypt = require('bcryptjs');
+const bodyParser = require('body-parser');
+const cors = require('cors');
+import image1 from "../pro/Front/App/image/tcs61nk83dig738gik8qtkcx6ue7sgek.png"
+
+
+const pool = new Pool({
+  user: 'postgres',
+  host: 'localhost',
+  database: 'KKK',
+  password: '12345',
+  port: 5432, 
+});
+
+
+
+pool.connect((err) => {
+  if (err) {
+    console.error('Ошибка подключения к базе данных:', err.message);
+  } else {
+    console.log('Подключение к базе данных установлено.');
+  }
+});
+
+
+const app = express();
+const port = 3000;
+const SECRET_KEY = 'your_secret_key';
+
+
+app.use(cors());
+app.use(bodyParser.json());
+
+
+app.post('/register', async (req, res) => {
+  const { login, password, token, email } = req.body;
+  console.log(email)
+  console.log("email")
+
+  if (!login || !password || !token) {
+    return res.status(400).json({ message: 'All fields are required.' });
+  }
+
+  const hashedPassword = bcrypt.hashSync(password, 8);
+  console.log(email)
+
+  try {
+    const client = await pool.connect();
+    try {
+      const existingUser = await client.query('SELECT id FROM reg WHERE login = $1', [login]);
+
+      if(password =! confirmPassword){
+        return res.status(409).json({ message: 'password не равен confirmPassword' }); 
+      }
+
+      if (existingUser.rowCount > 0) {
+        return res.status(409).json({ message: 'Login is already taken.' }); 
+      }
+
+      const token = jwt.sign({ userId: user.id, login: user.login }, SECRET_KEY);
+
+      console.log(email)
+      const result = await client.query(
+        'INSERT INTO reg (login, password, token, email) VALUES ($1, $2, $3, $4) RETURNING id',
+        [login, hashedPassword, token, email]
+      );
+
+      res.status(201).json({
+        message: 'User registered successfully',
+        userId: result.rows[0].id,
+      });
+
+    } finally {
+      client.release(); 
+    }
+  } catch (err) {
+    console.error('Error registering user:', err.message);
+    res.status(500).json({ message: 'Registration failed due to a server error.' });
+  }
+});
+
+
+app.post('/login', async (req, res) => {
+  const { login, password, token} = req.body;
+
+
+  if (!login || !password || !token) {
+    return res.status(400).json({ message: 'Login and password are required.' });
+  }
+
+  try {
+    const result = await pool.query('SELECT * FROM reg WHERE login = $1', [login]);
+    const user = result.rows[0];
+
+    if (!user) {
+      return res.status(401).json({ message: 'Invalid login or password.' });
+    }
+
+    const isPasswordValid = bcrypt.compareSync(password, user.password);
+    if (!isPasswordValid) {
+      return res.status(401).json({ message: 'Invalid login or password.' });
+    }
+
+    res.json({ token, login });
+  } catch (err) {
+    console.error('Error during login:', err.message);
+    res.status(500).json({ message: 'An error occurred.' });
+  }
+});
