@@ -1,0 +1,175 @@
+
+import './AppAll.css'
+import { Link } from 'react-router-dom';
+import Header from '../Page/Header'
+import Footer from '../Page/Footer';
+import i from '../App/image/(1).png'
+import i2 from '../App/image/(2).png'
+import i3 from '../App/image/(3).png'
+import i4 from '../App/image/(4).jpg'
+import i5 from '../App/image/(5).jpg'
+import i6 from '../App/image/(6).png'
+import '../App/index.css'
+import '../App/standart.css'
+import '../App/style.css'
+import '../App/adaptive.css'
+
+
+function AppALL() {
+  return (
+
+    <div className='asd'>
+
+<Header/>
+<main>
+    
+
+<div className="header-second">
+		<div className="container_12">
+			<div className="grid_12 text-center pt-6 pb-6">
+				<div className="mt-6 mb-6 pt-5 pb-5">
+					<h1>Мы представляем</h1>
+					<h3> Музыкальный сайт с возможностью добавлять свою музыку</h3>
+          <Link to="/Add">
+					 Попробовать сейчас
+          </Link>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+  <article className="pt-6 pb-6">
+		<div className="container_12 pt-3 pb-3 qwe">
+			<div className="grid_12 text-center article-header">
+				<h2>О нас</h2>
+				<h6>Мы добавили наши основные услуги</h6>
+				
+			</div>
+
+			<div className="grid_4 pt-2 pb-2 text-center">
+				<div className="inline about-element">
+					<img src={`${i}`} alt=""/>
+				</div>
+				<div className="text-about pt-2">
+					<h3>Слушать музыку</h3>
+					Сайт предлагает разнообразный перечень различного рода песен
+				</div>
+			</div>
+
+			<div className="grid_4 pt-2 pb-2 text-center">
+				<div className="inline about-element">
+        <img src={`${i2}`} alt=""/>
+				</div>
+				<div className="text-about pt-2">
+					<h3>Добавлять на сайт музыку</h3>
+					Вы можете прикрепить файл со скаченной вами музыкой на этот сайт
+				</div>
+			</div>
+
+			<div className="grid_4 pt-2 pb-2 text-center">
+				<div className="inline about-element">
+        <img src={`${i3}`} alt=""/>
+				</div>
+				<div className="text-about pt-2">
+					<h3>Зайти на свой аккаунт</h3>
+          При регистрации на сайте, пользователь сможет использовать полный функционал сайта
+				</div>
+			</div>
+		</div>
+    </article>
+    
+	
+    <div className="container_12 pt-3 pb-3">
+			<div className="grid_12 text-center article-header">
+				<h2 className="h-bold">Наши возможности</h2>
+				<h6>Ощутите наши возможности шаг за шагом (как мы это делаем).</h6>
+				<hr className="black-line"/>
+			</div>
+
+			<div className="grid_12">
+
+
+				<div className="container-block mt-4 mb-4">
+					<div>
+						<div className="img-container">
+							<div>
+								
+							</div>
+							<img src={`${i4}`} alt=""/>
+						</div>
+
+						<div className="text-container text-left">
+							<div>
+								<h4>Шаг 1 : Регистрация на сайте</h4>
+								<p>Зарегестрировавшись на сайте, у пользователя появится возможность создавать песни и прослушивать их в окне &quot;Пользовательские песни&quot;. Если пользователь выйдет из аккаунта, то он сможет вернуться в него авторизовавшись.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+				<div className="container-block mt-4 mb-4">
+					<div>
+						<div className="text-container text-right">
+							<div>
+								<h4>Шаг 2 : Добавить музыку на сайт </h4>
+								<p>Заполнив определённые строки, пользователь добавит на сайт музыку, и если всё заполнено верно, то на сайт добавится музыка. Саму музыку можно послушать на странице &quot;Пользовательские песни&quot;</p>
+							</div>
+						</div>
+
+						<div className="img-container right-img">
+							<div>
+								
+							</div>
+							<img src={`${i5}`} alt=""/>
+						</div>
+					</div>
+				</div>
+
+
+				<div className="container-block mt-4 mb-4">
+					<div>
+						<div className="img-container">
+							<div>
+								
+							</div>
+              <img src={`${i6}`} alt=""/>
+						</div>
+
+						<div className="text-container text-left">
+							<div>
+								<h4>Шаг 3 : Слушать музыку</h4>
+								<p>Чтобы слушать музыку, пользователю не обязательно регистрироваться, ведь по мимо страницы &quot;Пользовательские песни &quot; также существует страница &quot;Музыки &quot; на которой пользователь сможет послушать музыку, которую есть на сайте изночально </p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+
+			
+
+
+
+
+
+
+
+			</div>
+		</div>
+
+
+    </main>
+    
+<Footer/>
+ </div>
+
+
+
+
+    
+  )
+}
+
+export default AppALL
