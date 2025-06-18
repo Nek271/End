@@ -1,0 +1,317 @@
+/* -------- HEADER ----------- */
+
+.header-second
+{
+    background: url(https://i.pinimg.com/originals/20/9e/bc/209ebcb207750f413b730a49e97091c0.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    background-size: 100% 100%;
+}
+
+.header-second > div > div > div > h1
+{
+    font-size: 3.5em;
+    font-weight: 700;
+
+    margin-bottom: 0;
+
+    color: #fff;
+}
+
+.header-second > div > div > div > h3
+{
+    font-size: 2em;
+    font-weight: 300;
+
+    color: #fff;
+}
+
+.header-second > div > div > div > a
+{
+    font-size: 1.75em;
+    font-weight: 700;
+
+    display: inline-block;
+
+    padding: 15px 35px;
+
+    transition: .5s;
+
+    color: #fff;
+    border-radius: 10px;
+    background-color: #f8cd53;
+}
+
+
+
+.header-second > div > div > div > a:hover
+{
+    background-color: #dab54a;
+}
+
+.header-second > div > div > div > a:focus
+{
+    color: #ebebeb;
+    background-color: #dab54a;
+}
+/* -------- HEADER ----------- */
+/* --------- MAIN ----------- */
+
+body
+{
+    min-width: 430px;
+}
+
+.asd{
+    background-color: #f4f4f4;
+}
+label{
+    color: white;
+}
+
+.article-header
+{
+    color: #292929;
+}
+
+.article-header > h2
+{
+    font-size: 3em;
+    font-weight: 300;
+
+    margin-bottom: 0;
+
+    color: #424242;
+}
+
+.article-header > h6
+{
+    font-size: 1.3em;
+    font-weight: 300;
+
+    color: #424242;
+}
+
+.article-header > hr
+{
+    display: inline-block;
+
+    width: 40px;
+    height: 4px;
+
+    background-color: #424242;
+}
+
+.text-about
+{
+    color: #424242;
+}
+
+
+
+.about-element > img:hover
+{
+    -webkit-animation: LR-T_two 1s;
+            animation: LR-T_two 1s;
+}
+
+.article-header > h2:hover
+{
+    -webkit-animation: LR-T_one 1s;
+            animation: LR-T_one 1s;
+}
+
+.text-white
+{
+    color: #fff;
+}
+
+.text-primary
+{
+    color: #d03958;
+}
+
+.btn
+{
+    font-weight: 500;
+
+    padding: 10px 40px;
+
+    transition: .5s;
+
+    border-radius: 10px;
+}
+
+.btn-primary
+{
+    color: #263238;
+    background: #e3d5b8;
+}
+
+.btn-primary:hover
+{
+    background: #dccaa6;
+}
+
+.btn-primary:focus
+{
+    color: #fff;
+    background: #d03958;
+    box-shadow: 0 0 0 .3em rgba(208, 57, 88, .5);
+}
+
+.btn-all
+{
+    height: 100%;
+}
+
+.btn-form
+{
+    font-size: 1.15em;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 40px;
+    display: block;
+
+    width: 80%;
+    padding: 15px;
+
+    cursor: pointer;
+
+    color: #fff;
+    border: 0;
+    background-color: #161616;
+}
+
+.btn-form:hover
+{
+    outline: none;
+    box-shadow: 0 0 0 .3em rgba(0, 0, 0, .5);
+}
+
+/* .form > div
+{
+    position: absolute;
+
+    display: inline-block;
+
+    width: 80%;
+
+    text-align: center;
+
+    border-radius: 10px;
+    background-color: #d03958;
+} */
+
+.btn-red
+{
+    font-size: 1.25em;
+    font-weight: 700;
+
+    display: block;
+
+    padding: 10px 30px;
+
+    transition: .5s;
+    text-transform: uppercase;
+
+    color: #fff;
+    background-color: #de2b24;
+}
+
+.btn-red:hover
+{
+    background-color: #be251f;
+}
+
+.btn-red:focus
+{
+    background-color: #a41f1a;
+    text-shadow: 0 0  10px #fff;
+}
+
+.input-element > div > input:hover
+{
+    box-shadow: 0 0 10px rgba(0,0,0, .6);
+}
+
+.input-element > div > input:focus
+{
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+
+    box-shadow: 0 0 10px rgba(0,0,0, .6);
+}
+
+
+
+.btn-black
+{
+    font-size: 1.25em;
+
+    display: inline-block;
+
+    padding: 10px 30px;
+
+    transition: .5s;
+
+    color: #fff;
+    border: 2px #5c5c5c solid;
+}
+
+.btn-black:hover
+{
+    border-color: #de2b24;
+}
+
+.btn-black:focus
+{
+    color: #e2e2e2;
+    border-color: #de2b24;
+    background-color: #515151;
+    text-shadow: 0 0 2px #fff;
+}
+.btnU
+{
+    /* color: #5b5b5b; */
+    font-size: 16px;
+    height:25px;
+    width:100px;
+    margin-left: 665px;
+    /* border-color: #de2b24; */
+    background-color: #e7e6e6;
+    text-shadow: 0 0 2px #fff;
+}
+.GOOL{
+    padding-top: 20px;
+    margin-bottom: -20px;
+
+}
+.GOOL2{
+    padding-top: 20px;
+    margin-bottom: -40px;
+}
+
+.bold{
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+.fff{
+    height: 40px;
+}
+
+/* --------- MAIN ----------- */
+/* -------- FOOTER ---------- */
+
+footer
+{
+    color: #adadad;
+    background-color: #515151;
+}
+
+/* -------- FOOTER ---------- */
