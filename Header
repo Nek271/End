@@ -1,0 +1,82 @@
+
+import { Link } from 'react-router-dom';
+import qwe from '../App/image/pngwing.com.png'
+
+
+function Header() {
+
+	
+
+  return (
+
+
+<div className='q2'>
+<div className="header-first">
+
+
+		
+
+
+		<div className="container_12">
+		<nav className="grid_12">
+    
+			<ul>
+				<div className="left-element">
+					<Link to="/App">
+          <b>
+						<img src= {`${qwe}`} alt="logo"/>
+            </b>
+					</Link>
+				</div>
+        <div className='right'>
+				<li>
+        <Link to="/App">
+        <b>
+        <div className="perehod">Главная</div>
+        </b>
+        </Link>
+				</li>
+				<span><i className="fas fa-circle"></i></span>
+				<li>
+        <Link to="/admin_songs">
+        <b>
+        <div className="perehod">Музыка</div>
+        </b>
+        </Link>
+				</li>
+				<span><i className="fas fa-circle"></i></span>
+				<li>
+        <Link to="/users">
+        <b>
+        <div className="perehod">Пользовательская&nbsp;музыка </div> 
+        </b>
+        </Link>
+				</li>
+				<span><i className="fas fa-circle"></i></span>
+				<li>
+        <Link to="/Add">
+        <b>
+        <div className="perehod">Добавление&nbsp;музыки</div>
+        </b>
+        </Link>
+				</li>
+
+				<Link to="/login">
+        <b>
+        <div className="perehod">  Вход</div>
+          </b>
+				</Link>
+			
+      </div>
+      </ul>
+		</nav>
+	</div>
+
+	
+</div>
+</div>
+
+  )
+}
+
+export default Header
