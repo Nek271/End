@@ -1,0 +1,6 @@
+
+npm install pg
+npm install express
+npm install jsonwebtoken
+npm install bcryptjs
+npm install body-parser
