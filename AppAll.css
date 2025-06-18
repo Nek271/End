@@ -1,0 +1,88 @@
+.appFontB{
+    padding-top: 30px;
+    font-weight: bold;
+    font-size: 42px;
+    text-align: center;
+    /* color:white; */
+    
+}
+
+.viborFlex{
+    margin: 80px;
+    margin-top: 100px;
+	
+	height: 500px;
+	width: 500px;
+    background-color: rgba(216, 216, 214, 0.75);
+	box-shadow: 0 4px 16px 0 rgba(0, 0, 0, .078), 0 0 16px 0 rgba(0, 0, 0, .078);
+}
+
+.flexColumn{
+    
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 650px;
+	width: 1900px;
+}
+
+.viborName{
+    /* box-shadow: 0 0 0 .3em rgba(208, 57, 88, .5); */
+    background-color: rgba(255, 255, 255, 0.5);
+    height: 70px;
+    display: flex;
+    text-align: center;
+  justify-content: center;
+  align-items: center;
+    font-weight: bold;
+    font-size: 21px;
+    font-family: 'Open Sans', sans-serif;
+    padding: 5px;
+    border: 2px #e1e1e1 solid;
+}
+
+.viborWhat{
+
+    
+    padding: 5px;
+    text-align: center;
+    height: 220px;
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    /* color: white; */
+    font-weight: bold;
+}
+
+.divText{
+    width:  1900px;
+}
+
+.viborButton{
+    height: auto;
+    width: 150px;
+    margin-top: 10%;
+    padding: 7px;
+    margin-left: 32%;
+    font-size: 24px;
+    font-family: 'Open Sans', sans-serif;
+    background-color: aquamarine;
+    text-align: center;
+    transition: 0.2s;
+    
+}
+
+.viborButton:hover{
+    margin-left: 31%;
+    font-size: 28px;
+    transition: 0.2s;
+    width: 160px;
+}
+
+.ALLDiv{
+    width: 100%;
+    height: 100%;
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+}
