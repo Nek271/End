@@ -1,0 +1,315 @@
+
+*{
+	margin: 0%;
+	padding: 0%;
+}
+
+.body{
+	background-color: #f1f1f1;
+	
+	margin: 0%;
+	width: 1000 px;
+}
+
+.all{
+
+	
+	
+	margin: 0px;    
+	padding-bottom:5px;
+	WIDTH: 1700px;;
+    padding-top: 0.1px;
+	
+
+}
+
+.music{
+	
+	padding:20px;
+	margin-bottom:20px;
+	margin-right: 70px;
+	height:100px;
+	WIDTH:770px;
+	transition: 0.4s; 
+	background-color: white;
+}
+
+.music:hover{
+    transition: 0.4s;
+	box-shadow: 0 4px 16px 0 rgba(0, 0, 0, .078), 0 0 16px 0 rgba(0, 0, 0, .078);
+}
+
+.mu{
+    height: 100px;
+	margin-top: -25px;
+    width: 100px;
+	src: url("Снимок экрана 2024-10-23 115126.png");
+}
+
+.mu1{
+    height: 100px;
+	/* margin-top: -25px; */
+    width: 100px;
+	src: url("Снимок экрана 2024-10-23 115126.png");
+}
+
+.logotip{
+	margin-top: 5px;
+		margin-left: 20%;
+		height: 100px;
+		width: 100px;
+		display: flex;
+		justify-content: end;
+}
+
+.q{
+    margin-top: -100px;
+    margin-left: 150px;
+    width: 600px;
+    height: 50px;
+	font-size: 16px;
+}
+
+.q1{
+    margin-top: -90px;
+    margin-left: 1150px;
+    width: 80%;
+    height: 50px;
+}
+.vibor{
+
+height: 110px;
+width: 1900px;
+top: 0px;
+display: flex;
+flex-direction: row;
+}
+
+.perehod{
+	
+	margin-left: 5px;
+	padding: 5px;
+	height: auto;
+	width: auto;
+	font-size: 20px;
+	transition: 0.4s;
+	font-family: 'Open Sans', sans-serif;
+	text-align: right;
+	
+}
+a{
+	text-decoration:none;
+	color:rgb(236, 236, 236);
+}
+
+.perehod:hover{
+	transition: 0.4s;
+	box-shadow: 0 4px 16px 0 rgba(0, 0, 0, .078), 0 0 16px 0 rgba(0, 0, 0, .078);
+	color:#ffffff;
+	background-color:  #1bbc9b;
+}
+.right{
+	
+	margin-top: 30px;
+	display: flex;
+	flex-direction: row;
+	justify-content: end;
+	height: 40px;
+	width: 1200px;
+	font-size: 20px;
+	transition: 0.4s;
+	padding: 5px;
+}
+
+
+.rad{
+	display: flex;
+	flex-direction: row;
+	margin-top: 20px;
+	margin-bottom: 50px;
+	background-color: #f4f4f4;
+}
+
+.login{
+
+	height: 35px;
+	width: 35px;
+	margin-top: 15px;
+	
+	padding: 5px;
+	
+}
+.flex{
+	display: flex;
+	flex-direction: column;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.Error{
+  font-size: 42px;
+}
+
+.Reg{
+	margin-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	height: 650px;
+	width: 500px;
+	background-color: aquamarine;;
+	box-shadow: 0 4px 16px 0 rgba(0, 0, 0, .078), 0 0 16px 0 rgba(0, 0, 0, .078);
+}
+
+.text{
+
+	font-size: 42;
+}
+
+.musicAll{
+	margin-top: -60px;
+	margin-left:140px;
+	height: 100px;
+	width: 500px;
+	border-radius: 0%;
+	
+}
+
+.Song{
+	margin-top: 20px;
+	
+	height: 650px;
+	width: 500px;
+	background-color: #ffffff;
+	box-shadow: 0 4px 16px 0 rgba(0, 0, 0, .078), 0 0 16px 0 rgba(0, 0, 0, .078);
+}
+
+.AllText{
+	font-family: 'Open Sans', sans-serif;
+}
+
+
+
+
+.form
+{
+	margin-left: auto;
+	margin-right: auto;
+	
+	
+    
+	/* position: absolute; */
+
+    display: inline-block;
+	margin-top: 50px;
+
+    width: 400px;
+	height: auto;
+
+    text-align: center;
+
+    border-radius: 10px;
+    background-color: #ffffff;
+	
+}
+
+.pt-2{
+	padding: 20px;
+}
+
+.text-white
+{
+	padding-top: 20px;
+    color: #fff;
+}
+
+.form-element > input
+{
+    width: 75%;
+    padding: 20px 5px;
+
+    border: 1;
+    border-radius: 7px;
+}
+
+.form-elementB
+{
+    width: 90%;
+    padding: 15px ;
+	background-color: black;
+    border: 0;
+    border-radius: 10px;
+	color: white;
+	font-size: 18px;
+}
+
+.form-elementD
+{
+    width: 90%;
+    padding: 15px ;
+	
+    border: 0;
+    border-radius: 10px;
+	color: rgb(255, 255, 255);
+	font-size: 18px;
+	
+}
+
+.AppMore{
+    background-position: center;
+    background-size: cover;
+	
+	height: 800px;
+}
+
+main{
+	background-color: #f4f4f4;
+	min-height: calc(100vh - 220px);
+    background-position: center;
+    background-size: cover;
+}
+
+footer{
+	background-color: #2d3e50;
+	height: 100px;
+	width: 100%;
+	color: #ffffff;
+	font-family: 'Open Sans', sans-serif;
+
+}
+
+footer > div > div
+    {
+        padding: 5px;
+
+        text-align: center !important;
+    }
+
+	.text-primary {
+		color: #d03958;
+	}
+
+	.mr-2{
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+
+	.gray{
+		color: gray;
+		margin: auto;
+		margin-top: 10px;
+	}
+
+	.blue{
+		color: rgb(28, 125, 237);
+		display: inline;
+	}
+
+	.blue:hover{
+		color: rgb(28, 125, 237);
+		text-decoration: underline;
+		display: inline;
+	}
+
+	.red{
+		color: red;
+	}
